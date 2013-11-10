@@ -7,7 +7,6 @@ body
     margin: 0;
     overflow: hidden;
     background-image:url('achtergrond.jpg');
-    background-size: 100% auto;
 }
 
 #fullscreenButton 
@@ -24,7 +23,7 @@ body
 #surface
 {        
     height: 70%;
-     background-image:url('achtergrond.jpg') top-left; 
+     background-image:url('achtergrond.jpg'); 
     width: 95%;
     margin-left:2%;
     top:15%;
@@ -60,21 +59,21 @@ body
 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
-    font-size: 20px;$
+    font-size: 50%;
 }
 
 #pauze
 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 50%;
 }
 
 #reset
 {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 50%;
 }
 
 #showtm 
@@ -85,7 +84,7 @@ body
     background-color: blue; 
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 80%;
 	color: white;    
     width: 95%;
 	margin-top: 2%;

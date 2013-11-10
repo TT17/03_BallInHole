@@ -6,8 +6,8 @@ var mouseDownInsideball;
 var touchDownInsideball;
 var movementTimer;
 var lastMouse, lastOrientation, lastTouch;
-var xRandom = Math.floor((Math.random()*1650)+60);
-var yRandom = Math.floor((Math.random()*800)+60);
+var xRandom = Math.floor((Math.random()* window.innerWidth));
+var yRandom = Math.floor((Math.random()* window.innerHeight));
 
                             
 // Initialisation on opening of the window
@@ -169,8 +169,8 @@ function inHole(xDelta, yDelta)
         if (ball.x > xRandom-1 && ball.x < xRandom+1 && ball.y > yRandom-1 && ball.y < yRandom+1)
 		{                         
                 alert("Je hebt het spelletje uitgespeeld op " + document.getElementById('showtm').innerHTML + " seconden !");
-				xRandom = Math.floor((Math.random()*1650)+60);
-				yRandom = Math.floor((Math.random()*800)+60);
+				xRandom = Math.floor((Math.random()* window.innerWidth));
+				yRandom = Math.floor((Math.random()* window.innerHeight));
 				drawHole();
 				init(); 
                 doReset();                                
@@ -187,8 +187,8 @@ function moveBall(xDelta, yDelta)
 		if (ball.x > xRandom-1 && ball.x < xRandom+1 && ball.y > yRandom-1 && ball.y < yRandom+1)
 		{                			                
 			alert("Je hebt het spelletje uitgespeeld op " + document.getElementById('showtm').innerHTML + " seconden !");
-			xRandom = Math.floor((Math.random()*1650)+60);
-			yRandom = Math.floor((Math.random()*800)+60);
+			xRandom = Math.floor((Math.random()* window.innerWidth));
+			yRandom = Math.floor((Math.random()* window.innerHeight));
 			drawHole();
 			init();
 			doReset();                                
